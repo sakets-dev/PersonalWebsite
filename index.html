@@ -7,7 +7,7 @@
   <link href="src/output.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#393E46] text-white font-[Fira Code]">
+<body class="bg-[#393E46] text-white font-[Fira Code] ">
   <div class="min-h-screen flex flex-col items-center justify-center px-4">
     <div class="grid gap-6 w-full max-w-5xl md:grid-cols-2">
 
@@ -40,76 +40,86 @@
       </div>
 
       <!-- Projects Modal -->
-      <div id="projects-modal" 
-           class="hidden fixed inset-0 bg-black/70 backdrop-blur-md flex items-center justify-center z-50 
-                  transition-opacity duration-300 ease-out opacity-0">
+        <!-- Projects Modal -->
+        <div id="projects-modal" 
+            class="hidden fixed inset-0 bg-black/70 backdrop-blur-md flex items-center justify-center z-50 
+                    transition-opacity duration-300 ease-out opacity-0">
         <div id="projects-content"
-             class="bg-white/10 border border-white/20 rounded-xl p-20 w-11/12 md:w-3/4 lg:w-1/2 shadow-lg relative 
+            class="bg-white/10 border border-white/20 rounded-xl p-20 w-11/12 md:w-3/4 lg:w-1/2 shadow-lg relative 
                     transform scale-95 transition-transform duration-300 ease-out max-h-[90vh] overflow-y-auto">
-          
-          <!-- Close Button -->
-          <button onclick="closeProjects()" 
-                  class="absolute top-4 right-4 text-white text-2xl font-bold hover:text-gray-300">
+            
+            <!-- Close Button -->
+            <button onclick="closeProjects()" 
+                    class="absolute top-4 right-4 text-white text-2xl font-bold hover:text-gray-300">
             ✖
-          </button>
+            </button>
 
-          <h2 class="text-3xl font-bold mb-6 text-white">Projects - Detailed View</h2>
+            <h2 class="text-3xl font-bold mb-6 text-white text-center">Projects</h2>
 
-          <!-- Project 1 -->
-        <div class="mb-6">
-            <h3 class="text-xl font-semibold text-white">Sign Language Detection</h3>
+            <!-- Project 1 -->
+            <div class="mb-6">
+            <div class="flex items-center justify-between">
+                <h3 class="text-xl font-semibold text-white">Sign Language Detection &nbsp;&nbsp;|&nbsp;&nbsp;</h3>
+                <a href="https://github.com/sakets-dev/sign_language_detector" target="_blank" 
+                class="text-blue-400 hover:text-blue-300 underline ml-4">  View on GitHub</a>
+            </div>
             <p class="text-gray-200 mt-2">
-            A real-time interpreter built with <strong>Python, OpenCV, MediaPipe, and a KNN classifier</strong>. 
-            Detects hand gestures via webcam and translates them into text for accessibility. The project gave me 
-            strong experience in <strong>computer vision and machine learning</strong>, particularly in applying 
-            AI to real-world accessibility challenges. Next steps include improving recognition accuracy using 
-            <strong>deep learning models (CNNs/RNNs)</strong> and adding support for full sentence 
-            detection.
+                A real-time interpreter built with <strong>Python, OpenCV, MediaPipe, and a KNN classifier</strong>. 
+                Detects hand gestures via webcam and translates them into text for accessibility. The project gave me 
+                strong experience in <strong>computer vision and machine learning</strong>, particularly in applying 
+                AI to real-world accessibility challenges. Next steps include improving recognition accuracy using 
+                <strong>deep learning models (CNNs/RNNs)</strong> and adding support for full sentence detection.
             </p>
-            <a href="https://github.com/sakets-dev/sign_language_detector" target="_blank" 
-            class="inline-block mt-3 text-blue-400 hover:text-blue-300 underline">View on GitHub</a>
-        </div>
-        
-        <!-- Project 2 -->
-        <div class="mb-6">
-            <h3 class="text-xl font-semibold text-white">Morse Code Translator</h3>
-            <p class="text-gray-200 mt-2">
-            A <strong>Python-based translator</strong> that converts text ↔ Morse code. Currently supports 
-            both CLI and basic encoding/decoding logic. I used <strong>Python and Tkinter</strong> while 
-            experimenting with GUI development, adding buttons for generating dots and dashes for hands-on practice. 
-            My next step is to expand this into a full <strong>cross-platform desktop app</strong> with audio playback 
-            for Morse tones and real-time decoding from microphone input.
-            </p>
-            <a href="https://github.com/sakets-dev/morse-decoder-app" target="_blank" 
-            class="inline-block mt-3 text-blue-400 hover:text-blue-300 underline">View on GitHub</a>
-        </div>
-        
-        <!-- Project 3 -->
-        <div class="mb-6">
-            <h3 class="text-xl font-semibold text-white">Chrome Notes Extension</h3>
-            <p class="text-gray-200 mt-2">
-            A <strong>sticky-notes Chrome extension</strong> built with <strong>HTML, CSS, JavaScript, and Chrome APIs</strong>. 
-            It allows users to create, move, resize, and persist notes across browser sessions, with data stored locally. 
-            This project taught me the fundamentals of <strong>browser extension architecture</strong>, event listeners, 
-            and persistence. Future improvements include <strong>cloud syncing between devices</strong>, customizable 
-            themes, and integrating a reminder system.
-            </p>
-            <a href="https://github.com/sakets-dev/sticky-note-extension" target="_blank" 
-            class="inline-block mt-3 text-blue-400 hover:text-blue-300 underline">View on GitHub</a>
-        </div>
-        
-        <!-- Project 4 -->
-        <div>
-            <h3 class="text-xl font-semibold text-white">In Progress - Productivity App</h3>
-            <p class="text-gray-200 mt-2">
-            A <strong>React + Tailwind productivity platform</strong> with note-taking, Pomodoro timers, timetable generator, 
-            and handwriting support. The tech stack includes <strong>React, Tailwind CSS, 
-            Node.js, and Firebase</strong> for authentication and data storage. The goal is to create something powerful, but simple enough for students.
+            </div>
 
+            <!-- Project 2 -->
+            <div class="mb-6">
+            <div class="flex items-center justify-between">
+                <h3 class="text-xl font-semibold text-white">Morse Code Translator &nbsp;&nbsp;|&nbsp;&nbsp;</h3>
+                <a href="https://github.com/sakets-dev/morse-decoder-app" target="_blank" 
+                class="text-blue-400 hover:text-blue-300 underline ml-4">View on GitHub</a>
+            </div>
+            <p class="text-gray-200 mt-2">
+                A <strong>Python-based translator</strong> that converts text ↔ Morse code. Currently supports 
+                both CLI and basic encoding/decoding logic. I used <strong>Python and Tkinter</strong> while 
+                experimenting with GUI development, adding buttons for generating dots and dashes for hands-on practice. 
+                My next step is to expand this into a full <strong>cross-platform desktop app</strong> with audio playback 
+                for Morse tones and real-time decoding from microphone input.
             </p>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="mb-6">
+            <div class="flex items-center justify-between">
+                <h3 class="text-xl font-semibold text-white">Chrome Notes Extension &nbsp;&nbsp;|&nbsp;&nbsp;</h3>
+                <a href="https://github.com/sakets-dev/sticky-note-extension" target="_blank" 
+                class="text-blue-400 hover:text-blue-300 underline ml-4">View on GitHub</a>
+            </div>
+            <p class="text-gray-200 mt-2">
+                A <strong>sticky-notes Chrome extension</strong> built with <strong>HTML, CSS, JavaScript, and Chrome APIs</strong>. 
+                It allows users to create, move, resize, and persist notes across browser sessions, with data stored locally. 
+                This project taught me the fundamentals of <strong>browser extension architecture</strong>, event listeners, 
+                and persistence. Future improvements include <strong>cloud syncing between devices</strong>, customizable 
+                themes, and integrating a reminder system.
+            </p>
+            </div>
+
+            <!-- Project 4 -->
+            <div>
+            <div class="flex items-center justify-between">
+                <h3 class="text-xl font-semibold text-white">In Progress - Productivity App</h3>
+                <!-- No GitHub link yet -->
+            </div>
+            <p class="text-gray-200 mt-2">
+                A <strong>React + Tailwind productivity platform</strong> with note-taking, Pomodoro timers, timetable generator, 
+                and handwriting support. The tech stack includes <strong>React, Tailwind CSS, Node.js, and Firebase</strong> 
+                for authentication and data storage. The goal is to create something powerful, but simple enough for students.
+            </p>
+            </div>
+
         </div>
-        
-        </div>
+
+
       </div>
 
       <!-- Box 3: Accomplishments -->
@@ -137,7 +147,7 @@
           
           <button onclick="closeAccomplishments()" 
                   class="absolute top-4 right-4 text-white text-2xl font-bold hover:text-gray-300">✖</button>
-          <h2 class="text-3xl font-bold mb-6 text-white">Accomplishments - Detailed View</h2>
+          <h2 class="text-3xl font-bold mb-6 text-white">Accomplishments</h2>
 
           <div class="mb-6">
             <h3 class="text-xl font-semibold text-white">YC Combinator Delegate</h3>
@@ -213,7 +223,7 @@
             ✖
             </button>
 
-            <h2 class="text-3xl font-bold mb-6 text-white">Experience – Detailed View</h2>
+            <h2 class="text-3xl font-bold mb-6 text-white">Experience</h2>
 
             <!-- Experience 1 -->
             <div class="mb-6">
